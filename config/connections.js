@@ -54,15 +54,15 @@ module.exports.connections = {
   * http://en.wikipedia.org/wiki/MongoDB                                     *
   *                                                                          *
   * Run: npm install sails-mongo                                             *
-  *                                                                          *
+  *             mongodb://<dbuser>:<dbpassword>@ds061371.mongolab.com:61371/mshackerchallenge                                                             *
   ***************************************************************************/
   myMongo: {
     adapter: 'sails-mongo',
-    host: 'localhost',
-    port: 27017,
-    // user: 'username',
-    // password: 'password',
-    // database: 'your_mongo_db_name_here'
+    host: 'ds061371.mongolab.com',
+    port: 61371,
+    user: 'mshacker',
+     password: 'password',
+     database: 'mshackerchallenge'
   },
 
   /***************************************************************************
