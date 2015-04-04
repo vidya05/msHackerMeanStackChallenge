@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>    
+function add_field() 
+{
+
+	var form = document.getElementsByTagName('form')[0],
+    input = document.createElement('input');
+	input.setAttribute('type', 'text');
+	input.setAttribute('name', 'key');
+	form.appendChild(input);
+	
+
+	input = document.createElement('input');
+	input.setAttribute('type', 'text');
+	input.setAttribute('name', 'value');
+	form.appendChild(input);
+  
+};
+</script>
+</head>
+<body>
+
+<form name="input" action="/student/createStudent/>" method="POST" >
+Add a Student info:<br/> 
+<label> studentUniqueId </label>
+
+<input type="text" name="studentUniqueId"><br/>
+<button type="button" onclick="add_field()">Add another field</button><br/>
+<input type="submit" value="Submit"><br/>
+</form>
+
+</body>
+</html>
